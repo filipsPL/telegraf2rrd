@@ -7,11 +7,11 @@ Simply:
 
 ```text
                                    [this tool]
-┌─────────────┐          ┌──────────┐      ┌───────────┐        ┌───────────┐
-│ IoT data    │          │          │      │ RRDtool   │        │           │
-│ system data ├─ ─ ─ ─ ─►│ telegraf ├─────►│ database  │─ ─ ─ ─►│ graphs    │
-│ or other    │          │          │      │           │        │           │
-└─────────────┘          └──────────┘      └───────────┘        └───────────┘
+┌─────────────┐          ┌──────────┐      ┌───────────┐        ┌──────────┐
+│ IoT data,   │          │          │      │  RRDtool  │        │          │
+│ system data,├─ ─ ─ ─ ─►│ telegraf ├─────►│ database  │─ ─ ─ ─►│  graphs  │
+│ or other.   │          │          │      │  *.rrd    │        │          │
+└─────────────┘          └──────────┘      └───────────┘        └──────────┘
 ```
 
 each data source (e.g. mqtt topic) will be stored in the separate RRDtool database. Eg: data from `/iot/home/temp` topic will go to `iot_home_temp.rrd` etc.
