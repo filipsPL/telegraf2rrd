@@ -16,6 +16,8 @@ Simply:
 
 each data source (e.g. mqtt topic) will be stored in the separate RRDtool database. Eg: data from `/iot/home/temp` topic will go to `iot_home_temp.rrd` etc.
 
+[![DOI](https://zenodo.org/badge/623426453.svg)](https://doi.org/10.5281/zenodo.7852936)
+
 ## How to
 
 ### 1. telegraf.conf
